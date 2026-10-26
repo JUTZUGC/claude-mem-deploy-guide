@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "claudemem-guide": {
+      "command": "node",
+      "args": [
+        "mcp-server.mjs"
+      ]
+    }
+  }
+}
