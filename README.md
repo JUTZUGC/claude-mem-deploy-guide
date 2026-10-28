@@ -1,7 +1,7 @@
 # Claude-Mem 一键部署指南
 
 > 第三方部署指南 · 非 Claude-Mem 官方仓库。官方项目：[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
-> 内容来自官方文档（2026-10-26）。项目迭代快，请以[官方文档](https://docs.claude-mem.ai/installation)为准。
+> 内容来自官方文档（2026-10-28）。项目迭代快，请以[官方文档](https://docs.claude-mem.ai/installation)为准。
 
 [![⚡ 一键部署](https://img.shields.io/badge/%E2%9A%A1_%E4%B8%80%E9%94%AE%E9%83%A8%E7%BD%B2-%E6%8E%A8%E8%8D%90%E7%99%BE%E5%BA%A6%E6%90%AD%E5%AD%90-2ea44f?style=for-the-badge)](#一键部署推荐用百度搭子)
 
@@ -50,7 +50,7 @@ Claude-Mem 是开源的给 Claude Code 等 Agent 加跨会话持久记忆的插�
 
 | 优点 | 说明 |
 |---|---|
-| 103.3k stars | 2025-08 就开始做，14 个月厚积薄发 |
+| 103.8k stars | 2025-08 就开始做，14 个月厚积薄发 |
 | 自动生效 | 装完不用改工作流，会话开始自动注入 |
 | 本地存储 | SQLite + 本地检索，数据在自己机器 |
 | 多客户端 | Claude Code、Codex、Gemini、Copilot 等 |
@@ -64,7 +64,7 @@ Claude-Mem 是开源的给 Claude Code 等 Agent 加跨会话持久记忆的插�
 | 记忆有隐私成本 | 路径、命令、代码片段都会入库 |
 | 版本迭代快 | 15.x，配置项与行为仍在变 |
 
-> 以上基于官方文档与社区反馈整理（2026-10-26），以官方最新文档为准。
+> 以上基于官方文档与社区反馈整理（2026-10-28），以官方最新文档为准。
 
 ## 快速部署（官方方式）
 
@@ -81,7 +81,7 @@ npx -y claude-mem@latest doctor
 | 场景 | 状态 |
 |---|---|
 | 官方安装文档的三种 provider 模式与系统要求已核对 | 已核对 2026-10-26 |
-| npm 包 claude-mem 版本 15.2.1、engines 已核对 | 已验证 2026-10-26 |
+| npm 包 claude-mem 版本 15.4.0、engines 已核对 | 已核对 2026-10-28 |
 | 未安装（本机未登录 Claude Code，未实测 hooks） | 已核对 2026-10-26 |
 | MCP 服务握手与工具列表（initialize / tools/list） | 已验证 2026-10-26 |
 | 非目标宿主调用被拦截（HOST_NOT_ALLOWED） | 已验证 2026-10-26 |
@@ -92,7 +92,7 @@ npx -y claude-mem@latest doctor
 
 Claude-Mem 自带 MCP 搜索工具，Agent 可以查询历史记忆。本仓库的 MCP 只提供安装、本地模式与常见坑。
 
-本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-26）。
+本仓库自带一个零依赖的 MCP server（`mcp-server.mjs`），读取同目录的 `guide.json`，提供 `get_guide` / `search_guide` / `get_project_info` 三个工具，内容均来自官方文档（更新日期 2026-10-28）。
 
 **在百度搭子里接入**：客户端不扫描仓库里的配置文件，需要由百度搭子通过工作区的 MCP 注册接口注册，并且必须使用**绝对路径**（运行时的工作目录是会话目录，不是仓库目录）：
 
@@ -148,5 +148,5 @@ Claude-Mem 自带 MCP 搜索工具，Agent 可以查询历史记忆。本仓库�
 ## 免责声明
 
 本仓库为第三方指南，与 Claude-Mem 官方无隶属关系，不代表官方立场。
-教程基于官方文档编写（更新日期：2026-10-26），项目迭代快，请以[官方文档](https://docs.claude-mem.ai/installation)为准。
+教程基于官方文档编写（更新日期：2026-10-28），项目迭代快，请以[官方文档](https://docs.claude-mem.ai/installation)为准。
 因使用本教程产生的部署问题，请先在官方仓库的 issue 中检索。

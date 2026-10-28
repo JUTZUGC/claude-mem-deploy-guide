@@ -8,7 +8,7 @@
     "oneLiner": "给 Claude Code 等 Agent 加跨会话持久记忆的插件",
     "officialRepo": "https://github.com/thedotmack/claude-mem",
     "officialDocs": "https://docs.claude-mem.ai/installation",
-    "stars": "103.3k",
+    "stars": "103.8k",
     "license": "Apache-2.0",
     "highlights": [
       "捕获：自动记录会话中的决策、改动与命令",
@@ -21,15 +21,15 @@
     "mcpSupport": "Claude-Mem 自带 MCP 搜索工具，Agent 可以查询历史记忆。本仓库的 MCP 只提供安装、本地模式与常见坑。",
     "webuiUrl": "",
     "adapterPorts": "",
-    "collectedAt": "2026-10-26",
+    "collectedAt": "2026-10-28",
     "verification": [
       [
         "官方安装文档的三种 provider 模式与系统要求已核对",
         "已核对 2026-10-26"
       ],
       [
-        "npm 包 claude-mem 版本 15.2.1、engines 已核对",
-        "已验证 2026-10-26"
+        "npm 包 claude-mem 版本 15.4.0、engines 已核对",
+        "已核对 2026-10-28"
       ],
       [
         "未安装（本机未登录 Claude Code，未实测 hooks）",
